@@ -1,0 +1,130 @@
+@font-face {
+    font-family:des;
+    src: url(DESIGNER.otf);
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+     background-image: url('jezael-melgoza-alY6_OpdwRQ-unsplash.jpg');  
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    font-family:arial;
+    background-color: rgb(255, 255, 255);
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+
+
+
+}
+
+h1{
+    font-family:des;
+    font-size: 80px;
+    font-weight: bold;
+    text-align: center;
+    color: #0e0e0e;
+
+}
+
+input{
+    font-size: 28px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    outline: none;
+    text-align: center;
+    margin-left: 3dvh;
+
+}  
+
+button{
+    font-size: 27.5px;
+    border: none;
+    background-color: rgb(0, 255, 34);
+    color: white;
+    border-radius: 20px;
+    margin-left: -45px;
+
+}
+
+.son{
+
+
+    background-color: #f4f4f4;
+    width: 400px;
+    height: 60vh;
+    border: none;
+    border-radius: 30px;
+    max-height: 80vh;
+    overflow-y: auto; 
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    transition: max-height 0.3s ease;
+    overflow-wrap: break-word;
+    
+
+}
+    
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.todo-item span {
+    flex: 1; 
+}
+
+.todo-item button {
+    margin-left: 10px; 
+    border: none;
+    background-color: #ff3a17;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+.todo-item button:hover {
+    background-color: #ff0000;
+}
+
+.son::-webkit-scrollbar {
+    width: 0px;
+}
+
+.son::-webkit-scrollbar-track {
+    background: #f4f4f4;
+    border-radius: 30px;
+}
+
+.son::-webkit-scrollbar-thumb {
+    background: #cccccc;
+    border-radius: 10px;
+}
+
+.son::-webkit-scrollbar-thumb:hover {
+    background: #b3b3b3;
+}
+
