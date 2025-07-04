@@ -4,10 +4,13 @@
 }
 
 
+
+
+
 body {
     margin: 0;
     padding: 0;
-     background-image: url('jezael-melgoza-alY6_OpdwRQ-unsplash.jpg');  
+     background-image: url('Virtual\ Background\ Bookshelf\ for\ Zoom\ Meetings….jpeg');  
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -16,44 +19,77 @@ body {
     background-color: rgb(255, 255, 255);
 }
 
+
+h1{ 
+    font-family: des;
+    font-size: 150px;
+    color: white;
+    font-weight: bolder;
+    align-self: start;
+    align-items: center;
+    margin-right: 40px;
+
+    
+}
+
+.line {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+
+input{
+    padding: 10px;
+    font-size: 20px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    width: 280px;
+    outline: none;
+    background: #fff;
+    color: #333;
+    transition: border-color 0.2s;
+
+
+    
+}
+
+
+.button {
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    width: 150px;
+    background-color: #2ad400;
+    color: #fff;
+    border: none;
+    transition: background-color 0.2s;
+    margin-bottom: 20px;
+    
+}
+
+.button:hover {
+    background-color: #07ec1a;
+    cursor: pointer;
+}
+.button:active {
+    background-color: transparent;
+}
+
 .container {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px
 
 
-
-}
-
-h1{
-    font-family:des;
-    font-size: 80px;
-    font-weight: bold;
-    text-align: center;
-    color: #0e0e0e;
-
-}
-
-input{
-    font-size: 28px;
-    border: none;
-    border-radius: 20px;
-    background-color: rgb(255, 255, 255);
-    color: #000000;
-    outline: none;
-    text-align: center;
-    margin-left: 3dvh;
-
-}  
-
-button{
-    font-size: 27.5px;
-    border: none;
-    background-color: rgb(0, 255, 34);
-    color: white;
-    border-radius: 20px;
-    margin-left: -45px;
 
 }
 
@@ -62,16 +98,19 @@ button{
 
     background-color: #f4f4f4;
     width: 400px;
-    height: 60vh;
+    height: 80vh;
     border: none;
     border-radius: 30px;
     max-height: 80vh;
     overflow-y: auto; 
     border: none;
     border-radius: 10px;
-    padding: 20px;
+    padding: 10px;
     transition: max-height 0.3s ease;
     overflow-wrap: break-word;
+    align-items: center;
+    margin-top: 5%;
+    margin-left: 2%;
     
 
 }
@@ -101,7 +140,7 @@ button{
     color: white;
     font-size: 20px;
     cursor: pointer;
-    border-radius: 20px;
+    border-radius: 8px;
     padding: 5px 10px;
     transition: background-color 0.3s ease;
 }
@@ -109,9 +148,13 @@ button{
 .todo-item button:hover {
     background-color: #ff0000;
 }
+.todo-item button:active {
+    background-color: transparent;
+}
+
 
 .son::-webkit-scrollbar {
-    width: 0px;
+    width: 8px;
 }
 
 .son::-webkit-scrollbar-track {
@@ -128,3 +171,32 @@ button{
     background: #b3b3b3;
 }
 
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 100px 20px 40px;
+    }
+
+    .son {
+        width: 90%;
+    }
+
+    input {
+        width: 90%;
+        align-self: center;
+    }
+
+    .button {
+        margin: 2%;
+        width: 90%;
+        align-self: center;
+    }
+
+    h1 {
+        font-size: 100px;
+        padding: 15px;
+    }
+}
